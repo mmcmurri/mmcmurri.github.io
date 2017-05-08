@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style2.css">
+<link href="../css/responsive.css" rel="stylesheet" type="text/css">
+
+<title>Our Work</title>
+
+</head>
+
+
+<body>
+
+<nav class="col-12 nav" id="desktop-nav">
+	<table>
+		<tr>
+			<td><img src="../images/PasticheLogoBlack.png" class="Brand" align="left"/></td>
+			<td class="navlinks">
+				<table>
+					<tr class="navbar">
+						<td><a href="../Home.html">Home</a></td>
+						<td><a href="../services/index.html">What We Do</a></td>
+						<td><a href="index.html">Our Work</a></td>
+						<td><a href="../about/index.html">About Us</a></td>
+						<td class="contact"><a style="color: red;" href="../contact/index.html">Get In Touch</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</nav>
+<nav style="padding-bottom:none;" id="mobile-nav">
+	<table>
+		<tr>
+			<td class="left" text-align="left">
+				<img class="navImage" src="../Images/PasticheLogoBlack.png">
+			</td>
+			
+			<td align="right" class="right">
+				<button href="#" class="menu-button" id="menuButton" text-align="right" onclick="myFunction()">
+					<span class="burger-icon"></span>
+				</button>
+			</td>
+		</tr>
+	</table>
+	<div class="dropdown">
+		  <div id="myDropdown" class="dropdown-content">
+			<a href="../Home.html">Home</a>
+			<a href="../services/index.html">Services</a>
+			<a href="index.html">Work</a>
+			<a href="../about/index.html">About</a>
+			<a href="../contact/index.html">Contact Us</a>
+		  </div>
+	</div>
+</nav>
+
+<div class="col-12 section">
+	
+<div style="text-align: center;"><img src="../Images/191.jpg" width="1000" height="800" alt=""/></div>
+
+</div>
+
+<div class="col-12 footer">
+		<table>
+			<tr>
+				<td class="brand"><img src="../images/PasticheLogoWhite.png" align="left"/></td>
+				<td class="footerText">
+					<p>1110-105 George St.</p>
+					<p>Toronto, Ontario</p>
+					<p>M5A 0L4</p>
+					<p>P: 647-456-2360</p>
+					<p>E: michael@pastichedigital.com</p>
+					
+				</td>
+			</tr>
+		</table>
+</div>
+
+<script>
+var menuButton = document.getElementById('menuButton');
+menuButton.addEventListener('click', function (e) {
+    menuButton.classList.toggle('is-active');
+    e.preventDefault();
+});
+	
+$("menuButton").click(function(){
+    $("MobileMenu").toggle(1000);
+});
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}	
+	
+</script>
+
+
+</body>
+</html>

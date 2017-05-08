@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Burger</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href=".../css/Style2.css">
+    <link href="../css/Responsive.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav class="col-12 nav" id="desktop-nav">
+	<table>
+		<tr>
+			<td><img src="../images/PasticheLogoBlack.png" class="Brand" align="left"/></td>
+			<td class="navlinks">
+				<table>
+					<tr class="navbar">
+						<td><a href="../Home.html">Home</a></td>
+						<td><a href="../services/index.html">What We Do</a></td>
+						<td><a href="../work/index.html">Our Work</a></td>
+						<td><a href="index.html">About Us</a></td>
+						<td class="contact"><a style="color: red;" href="../contact/index.html">Get In Touch</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</nav>
+<nav style="padding-bottom:none;" id="mobile-nav">
+	<table>
+		<tr>
+			<td class="left" text-align="left">
+				<img class="navImage" src="../images/PasticheLogoBlack.png">
+			</td>
+			
+			<td align="right" class="right">
+				<button href="#" class="menu-button" id="menuButton" text-align="right" onclick="myFunction()">
+					<span class="burger-icon"></span>
+				</button>
+			</td>
+		</tr>
+	</table>
+	<div class="dropdown">
+		  <div id="myDropdown" class="dropdown-content">
+			<a href="../Home.html">Home</a>
+			<a href="../services/index.html">Services</a>
+			<a href="../work/index.html">Work</a>
+			<a href="index.html">About</a>
+			<a href="../contact/index.html">Contact Us</a>
+		  </div>
+	</div>
+</nav>
+<div class="col-12 hero"><img class="hero-image" src="../images/AboutHero.png" width="1440" height="500" alt=""/></div>
+<div class="col-12 section">
+	<div class="col-12 caption">About Us</div>
+	<div class="col-12 subcaption"><p>Pastiche was formed in 2015 at the intersection of consultancy and agency.</p><br><p>We exist because of the increasing gap between impactful strategy, robust delivery, and creative capability. It's easy to start an agency, but too many times we've seen inflated budgets for low value outputs and poor quality deliverables. So we're here to bring reputable services, honesty and integrity back to businesses at an affordable price point.</p><br><p> Our team is built from a collection of facilitators, strategists, designers and full-stack programmers with expertise from a range of different backgrounds.</p><br><p>Enabled with an arsenal of modern and traditional toolsets, we are demonstrating value by facilitating outcome-driven strategy development, accelerating the time from ideation to prototype, and experimenting to unlock maximum value at scale.</p><br><p>Less chit chat. Better outputs.</p><br>
+	  <p style="font-weight:800;">Captivated audiences.</p>
+	  <br><p></p>
+	</div>
+	<div class="col-12 buttonArea"><button>View Services</button></div>
+	<div class="col-12 subcaption"> 
+    <img src="../images/WordCloud.png" width="auto" height="350"/> </div>
+</div>
+<div class="col-12 footer">
+		<table>
+			<tr>
+				<td class="brand"><img src="../images/PasticheLogoWhite.png" align="left"/></td>
+				<td class="footerText">
+					<p>1110-105 George St.</p>
+					<p>Toronto, Ontario</p>
+					<p>M5A 0L4</p>
+					<p>P: 647-456-2360</p>
+					<p>E: michael@pastichedigital.com</p>
+					
+				</td>
+			</tr>
+		</table>
+</div>
+
+
+<script>
+var menuButton = document.getElementById('menuButton');
+menuButton.addEventListener('click', function (e) {
+    menuButton.classList.toggle('is-active');
+    e.preventDefault();
+});
+	
+$("menuButton").click(function(){
+    $("MobileMenu").toggle(1000);
+});
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}	
+	
+</script>
+
+</body>
+</html>
