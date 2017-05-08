@@ -23,7 +23,7 @@ a {
 
 h5 {
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 
@@ -330,6 +330,10 @@ input#style {
 	
 }
 
+.ServiceType {
+	font-size:14px;
+}
+
 /*Iphones*/
 
 @media (min-width : 200px ) and 
@@ -575,5 +579,5 @@ textarea#styled {
 }
 
 h5 {
-	font-size: 12px;
+	font-size: 14px;
 }
