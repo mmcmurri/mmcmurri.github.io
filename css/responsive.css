@@ -3,10 +3,12 @@
 
 /*Desktop*/
 
+
 * {
 	box-sizing: border-box;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
 }
 
 html {
@@ -333,7 +335,8 @@ input#style {
 .ServiceType {
 	font-size:14px;
 }
-
+	
+	
 /*Iphones*/
 
 @media (min-width : 200px ) and 
@@ -359,11 +362,11 @@ img {
 	}	
 	
 
-.caption{
+.caption {
 		font-size:14px;
 	}
 	
-.subcaption{
+.subcaption {
 		font-size:10px;
 	}
 	
@@ -391,7 +394,7 @@ button {
 	font-size:8px;
 }
 
-.footerText{
+.footerText {
 	font-size:8px;
 }
 
@@ -437,13 +440,12 @@ textarea#styled {
 	border:1px #ffffff solid;
 	border-radius:20px;
 	}
-}
 
 .navbar {
 		font-size: 10px;
 	}
 
-.navlinks{
+.navlinks {
 		width:50%;
 	}
 	
@@ -459,8 +461,10 @@ textarea#styled {
 h5 {
 	font-size: 10px;
 }
+}
 
-@media (min-width: 668px) and (max-width: 1024px){
+@media (min-width : 668px ) and 
+	(max-width : 974px ) {
 
 [class*="col-"] {
         width: 100%;
@@ -478,7 +482,7 @@ h5 {
 		font-size: 10px;
 	}
 
-.navlinks{
+.navlinks {
 		width:50%;
 	}
 	
@@ -490,11 +494,11 @@ img {
 	}	
 	
 
-.caption{
+.caption {
 	font-size:14px;
 	}
 	
-.subcaption{
+.subcaption {
 	font-size:10px;
 	}
 	
@@ -522,7 +526,7 @@ button {
 	font-size:8px;
 }
 
-.footerText{
+.footerText {
 	font-size:8px;
 }
 
@@ -568,10 +572,9 @@ textarea#styled {
 	border:none;
 	border-radius:20px;
 	}
-}
 
 .ServiceType {
-	font-size:8px;
+	font-size: 10px;
 }
 
 .ServiceImage {
@@ -580,4 +583,5 @@ textarea#styled {
 
 h5 {
 	font-size: 14px;
+}
 }
